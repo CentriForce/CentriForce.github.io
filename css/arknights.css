@@ -128,7 +128,7 @@ a {
 }
 
 time {
-  font-family: OCRAEXT;
+  font-family: Benderlight;
 }
 
 code, pre {
@@ -471,7 +471,7 @@ body header {
   background-color: #141516;
   box-shadow: 0 5px 1.5rem 0 rgba(255, 255, 255, 0.1);
   transition: 0.3s;
-  font-family: OCRAEXT;
+  font-family: Benderlight;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -566,7 +566,7 @@ article #post-content p, article .recent-excerpt p {
   margin: 0;
 }
 .recent-post .categories, .recent-post .tags {
-  font-family: OCRAEXT, sans-serif;
+  font-family: Benderlight, sans-serif;
 }
 .recent-post .categories {
   color: #2bf;
@@ -670,7 +670,7 @@ article #post-content p, article .recent-excerpt p {
   background-color: #22bbff;
   margin-top: -21px;
   padding: 3px 10px 3px 40px;
-  font-family: OCRAEXT;
+  font-family: Benderlight;
 }
 
 aside {
@@ -696,14 +696,14 @@ aside::-moz-scrollbar {
 }
 
 h1 {
-  font-family: OCRAEXT, sans-serif;
+  font-family: Benderlight, sans-serif;
   margin-top: 0;
 }
 
 footer {
   color: #898989;
   padding: 0 3px 30px 3px;
-  font-family: OCRAEXT;
+  font-family: Benderlight;
 }
 
 #logo {
@@ -727,7 +727,7 @@ footer {
 
 #total {
   margin: 10px 0;
-  font-family: OCRAEXT;
+  font-family: Benderlight;
 }
 #total div {
   display: inline-block;
@@ -1057,7 +1057,7 @@ footer {
   color: #000;
   background-color: #fff;
   font-size: medium;
-  font-family: OCRAEXT;
+  font-family: Benderlight;
 }
 @media (min-width: 769px) {
   #Archives:hover, #Archives:target, #Categories:hover, #Categories:target, #Tags:hover, #Tags:target {
@@ -1115,7 +1115,7 @@ footer {
   padding: 6px 0;
   font-size: x-large;
   font-weight: 900;
-  font-family: OCRAEXT;
+  font-family: Benderlight;
   text-align: center;
 }
 
