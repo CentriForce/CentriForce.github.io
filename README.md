@@ -1,64 +1,66 @@
-# 🍥Fuwari
+# CentriForce's Blog
 
-A static blog template built with [Astro](https://astro.build).
+基于[🍥Fuwari]()静态博客模板的个人博客。
 
-[**🖥️ Live Demo (Vercel)**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**📦 Old Hexo Version**](https://github.com/saicaca/hexo-theme-vivia)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 中文**](https://github.com/saicaca/fuwari/blob/main/README.zh-CN.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 日本語**](https://github.com/saicaca/fuwari/blob/main/README.ja-JP.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 한국어**](https://github.com/saicaca/fuwari/blob/main/README.ko.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 Español**](https://github.com/saicaca/fuwari/blob/main/README.es.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 ไทย**](https://github.com/saicaca/fuwari/blob/main/README.th.md)
-
-> README version: `2024-09-10`
+> README 版本：`2024-09-10`
 
 ![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
 
-## ✨ Features
+## ✨ 功能特性
 
-- [x] Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
-- [x] Smooth animations and page transitions
-- [x] Light / dark mode
-- [x] Customizable theme colors & banner
-- [x] Responsive design
-- [ ] Comments
-- [x] Search
-- [ ] TOC
+- [x] 基于 Astro 和 Tailwind CSS 开发
+- [x] 流畅的动画和页面过渡
+- [x] 亮色 / 暗色模式
+- [x] 自定义主题色和横幅图片
+- [x] 响应式设计
+- [ ] 评论
+- [x] 搜索
+- [ ] 文内目录
 
-## 🚀 How to Use
+## 🚀 使用方法
 
-1. [Generate a new repository](https://github.com/saicaca/fuwari/generate) from this template or fork this repository.
-2. To edit your blog locally, clone your repository, run `pnpm install` AND `pnpm add sharp` to install dependencies.
-   - Install [pnpm](https://pnpm.io) `npm install -g pnpm` if you haven't.
-3. Edit the config file `src/config.ts` to customize your blog.
-4. Run `pnpm new-post <filename>` to create a new post and edit it in `src/content/posts/`.
-5. Deploy your blog to Vercel, Netlify, GitHub Pages, etc. following [the guides](https://docs.astro.build/en/guides/deploy/). You need to edit the site configuration in `astro.config.mjs` before deployment.
+1. 将仓库克隆至本地 `$ git clone https://github.com/CentriForce/CentriForce.github.io.git`
+2. 编辑配置文件 `src/config.ts` 来自定义博客
+3. 执行 `pnpm new-post <filename>` 创建新 `markdown` 文章，并在 `src/content/posts/` 目录中编辑
+4. 保存并 `$ git sync` 或 `$ git push`，github会运行自动任务来部署博客
 
-## ⚙️ Frontmatter of Posts
+## 📄 文章头格式
 
 ```yaml
 ---
+# 文章标题
 title: My First Blog Post
+# 发布时间
 published: 2023-09-09
+# 文章简介
 description: This is the first post of my new Astro blog.
+# 封面图片
 image: ./cover.jpg
+# 文章标签
 tags: [Foo, Bar]
+# 文章分类
 category: Front-end
+# 是否为草稿（草稿在上传后不会进行部署显示）
 draft: false
-lang: jp      # Set only if the post's language differs from the site's language in `config.ts`
+# 语言（仅当文章语言与 `config.ts` 中的网站语言不同时需要设置）
+lang: zh_CN
 ---
 ```
 
-## 🧞 Commands
+## 🧞 指令
 
-All commands are run from the root of the project, from a terminal:
+下列指令均需要在项目根目录执行：
 
-| Command                             | Action                                           |
-|:------------------------------------|:-------------------------------------------------|
-| `pnpm install` AND `pnpm add sharp` | Installs dependencies                            |
-| `pnpm dev`                          | Starts local dev server at `localhost:4321`      |
-| `pnpm build`                        | Build your production site to `./dist/`          |
-| `pnpm preview`                      | Preview your build locally, before deploying     |
-| `pnpm new-post <filename>`          | Create a new post                                |
-| `pnpm astro ...`                    | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro --help`                 | Get help using the Astro CLI                     |
+| Command                          | Action                                 |
+| :------------------------------- | :------------------------------------- |
+| `pnpm install && pnpm add sharp` | 安装依赖                               |
+| `pnpm dev`                       | 在 `localhost:4321` 启动本地开发服务器 |
+| `pnpm build`                     | 构建网站至 `./dist/`                   |
+| `pnpm preview`                   | 本地预览已构建的网站                   |
+| `pnpm new-post <filename>`       | 创建新文章                             |
+| `pnpm astro ...`                 | 执行 `astro add`, `astro check` 等指令 |
+| `pnpm astro --help`              | 显示 Astro CLI 帮助                    |
+
+## 📝 备注
+
+由于添加了 `.gitignore` ，在本地构建网站并预览的文件不会上传到github中。
